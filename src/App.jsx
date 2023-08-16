@@ -105,11 +105,11 @@ function handlePokeCardClick(event){
     <div className="App">
    <Header />
    <Pokes pokes={pokes} 
-     selectedTeam={selectedTeam} 
+     selectedTeam={selectedTeam}
      handlePokeCardClick = {handlePokeCardClick} 
      handleTeamSelectionChange = {handleTeamSelectionChange}/>
    <Footer />
-    </div>
+     </div>
   );
 }
 
