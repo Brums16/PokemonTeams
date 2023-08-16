@@ -20,7 +20,7 @@ const Pokes = ({pokes,selectedTeam,handlePokeCardClick,handleTeamSelectionChange
     <div className = "card-collection">
       {
         pokes.map((poke) => (
-          <div id={poke.id} onClick = {handlePokeCardClick} className={(poke.teamName === selectedTeam ?'card m-2 standout':'card m-2')} style={{cursor: "pointer"}}>
+          <div key = {poke.id} id={poke.id} onClick = {handlePokeCardClick} className={(poke.teamName === selectedTeam ?'card m-2 standout':'card m-2')} style={{cursor: "pointer"}}>
           <img src={poke.pic} className="card-img-top" />
           <div className="card-body">
           <h5 className="card-title">Name: {poke.name}</h5>
